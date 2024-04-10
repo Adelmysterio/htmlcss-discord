@@ -208,7 +208,7 @@ hr {
 }
 
 .jumbo section button {
-    width: 60%;
+    width: 15rem;
 }
 
 .jumbo img {
@@ -225,23 +225,54 @@ hr {
 
 .main-content {
     margin: 0 10rem 10rem;
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;   
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;  
 }
 
 .main-content div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border: 2px solid black;
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
     background-color: #f6f6f6;
     border-radius: 16px;
+    margin: 1rem;
+    width: 45%;
+}
+
+.grid-item-large {
+    padding: 30px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.grid-item-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
     padding: 30px;
 }
 
+.grid-item-small h2,
+.grid-item-small p{
+    align-self: flex-start;
+}
 
+.main-content h2{
+    margin-bottom: 1rem;
+}
 
+.main-content button{
+    margin-bottom: 4rem;
+}
+
+.grid-item-small button {   
+    align-self: flex-start;
+    margin-bottom: 0;
+}
 
 
 
@@ -279,6 +310,10 @@ button {
 
 .text-align-center {
     text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
 }
 
 .waves {
