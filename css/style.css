@@ -42,20 +42,20 @@ h1+p {
 main {
     display: flex;
     flex-direction: column;
-    margin: 0 20rem;
+    margin: 0;
 }
 
 main section {
     display: flex;
     justify-content: center;
-    margin-bottom: 10rem;
+    padding: 2rem 0;
     align-items: flex-start;
 }
 
 section section {
     display: flex;
     flex-direction: column;
-    flex-basis: 40%;
+    flex-basis: 20%;
 }
 
 main section:last-of-type {
@@ -67,13 +67,13 @@ main div:last-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10rem;
+    padding-bottom: 10rem;
 }
 
 main div img:first-child {
-    width: 75%;
+    width: 45rem;
     position: relative;
-    top: 30px;
+    top: 35px;
 }
 
 main p {
@@ -113,11 +113,14 @@ li {
     list-style-type: none;
     list-style-position: inside;
     padding: .5rem 0;
-    color: white;
 }
 
-img+p {
+a {
     color: white;
+    text-decoration: none;
+}
+
+img+a {
     margin-left: 1rem;
 }
 
@@ -177,10 +180,13 @@ hr {
 
 .social {
     display: flex;
-    height: 1.2rem;
     width: 60%;
     justify-content: space-between;
     margin-top: 1.2rem;
+}
+
+.social a i{
+    height: 2rem;
 }
 
 .nav-footer {
@@ -192,6 +198,21 @@ hr {
 
 .text-align-center {
     text-align: center;
+}
+
+.bg-gray {
+    background-color: #f6f6f6;
+}
+
+.waves {
+    display: block;
+    background-image: url(../img/wave.svg);
+    height: 8rem;
+    background-size: cover;
+}
+
+.reverse {
+    transform: rotate(180deg) scaleX(-1);
 }
 
 
@@ -221,3 +242,4 @@ button {
     background-color: #7289da;
     color: white;
 }
+
