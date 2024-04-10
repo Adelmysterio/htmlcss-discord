@@ -176,7 +176,6 @@ hr {
     margin-bottom: 10rem;
 }
 
-
 .lang {
     font-size: 2rem;
     padding-bottom: 1rem;
@@ -200,27 +199,31 @@ hr {
     padding-bottom: 2rem;
 }
 
-.text-align-center {
-    text-align: center;
+.jumbo {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 10rem;
+    padding-bottom: 8rem;
 }
 
-.bg-gray {
-    background-color: #f6f6f6;
+.jumbo section button {
+    width: 50%;
 }
 
-.waves {
-    display: block;
-    background-image: url(../img/wave.svg);
-    height: 8rem;
-    background-size: cover;
+.jumbo img {
+    width: 30%;
+    margin-left: 3rem;
+    padding-top: 3rem;
 }
 
-.reverse {
-    transform: rotate(180deg) scaleX(-1);
+.jumbo section h1,
+.jumbo section p{
+    width: 100%;
+    text-align: left;
 }
 
-
-/* Stile bottoni */
+/* Stile elementi */
 
 button {
     padding: .5rem 1rem;
@@ -247,6 +250,29 @@ button {
     color: white;
 }
 
+.bg-gray {
+    background-color: #f6f6f6;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.waves {
+    display: block;
+    background-image: url(../img/wave.svg);
+    height: 8rem;
+    background-size: cover;
+}
+
+.reverse {
+    transform: rotate(180deg) scaleX(-1);
+}
+
+.padding-bottom {
+    padding-bottom: 2rem;
+}
+
 /* Stati Hover */
 
 button:hover {
@@ -254,7 +280,7 @@ button:hover {
 }
 
 button.white:hover {
-color: #7289da;
+    color: #7289da;
 }
 
 button.black:hover {
